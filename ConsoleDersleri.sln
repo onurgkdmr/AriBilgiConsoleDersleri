@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu2_Tip_Donusumleri", "Konu2_Tip_Donusumleri", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu3_Operatorler", "Konu3_Operatorler", "{15A97E5F-026C-447A-97DD-DA689A533AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260109_4_Convert_Tip_Donusumleri", "260113_4_Convert_Tip_Donusumleri\260109_4_Convert_Tip_Donusumleri.csproj", "{FB79B064-56E3-419F-92B0-421A9C1DE52E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260115_1_Aritmetik_Operatorler", "260115_1_Aritmetik_Operatorler\260115_1_Aritmetik_Operatorler.csproj", "{7A7E4858-C2FD-4AB2-B7CF-CBB80A90EF62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260115_2_Karsilastirma_Operatorleri", "260115_2_Karsilastirma_Operatorleri\260115_2_Karsilastirma_Operatorleri.csproj", "{5F22BFA9-D0BA-4245-A621-ECB77E8224F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB79B064-56E3-419F-92B0-421A9C1DE52E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB79B064-56E3-419F-92B0-421A9C1DE52E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB79B064-56E3-419F-92B0-421A9C1DE52E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB79B064-56E3-419F-92B0-421A9C1DE52E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7E4858-C2FD-4AB2-B7CF-CBB80A90EF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7E4858-C2FD-4AB2-B7CF-CBB80A90EF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7E4858-C2FD-4AB2-B7CF-CBB80A90EF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7E4858-C2FD-4AB2-B7CF-CBB80A90EF62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F22BFA9-D0BA-4245-A621-ECB77E8224F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F22BFA9-D0BA-4245-A621-ECB77E8224F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F22BFA9-D0BA-4245-A621-ECB77E8224F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F22BFA9-D0BA-4245-A621-ECB77E8224F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB79B064-56E3-419F-92B0-421A9C1DE52E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7A7E4858-C2FD-4AB2-B7CF-CBB80A90EF62} = {15A97E5F-026C-447A-97DD-DA689A533AA6}
+		{5F22BFA9-D0BA-4245-A621-ECB77E8224F5} = {15A97E5F-026C-447A-97DD-DA689A533AA6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F783652E-3009-49EE-869B-F7F0F1D3A113}
+	EndGlobalSection
+EndGlobal
