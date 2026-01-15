@@ -31,7 +31,7 @@
             Console.WriteLine("Bölme:" + bol);
             Console.WriteLine("Çarpma:" + carp);
             Console.WriteLine("Mod Alma:" + modAl);
-
+            
 
 
         }
