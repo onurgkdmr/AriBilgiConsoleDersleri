@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260115_2_Karsilastirma_Oper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260115_3_Mantiksal_Operatorler", "260115_3_Mantiksal_Operatorler\260115_3_Mantiksal_Operatorler.csproj", "{AD16DBBA-1306-4312-94A0-3F0EF322317B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260115_4_Ornek_Operatorler", "260115_4_Ornek_Operatorler\260115_4_Ornek_Operatorler.csproj", "{4E243A4F-BB94-43E3-ACB7-3FDAE829005A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{AD16DBBA-1306-4312-94A0-3F0EF322317B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD16DBBA-1306-4312-94A0-3F0EF322317B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD16DBBA-1306-4312-94A0-3F0EF322317B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E243A4F-BB94-43E3-ACB7-3FDAE829005A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E243A4F-BB94-43E3-ACB7-3FDAE829005A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E243A4F-BB94-43E3-ACB7-3FDAE829005A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E243A4F-BB94-43E3-ACB7-3FDAE829005A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{7A7E4858-C2FD-4AB2-B7CF-CBB80A90EF62} = {15A97E5F-026C-447A-97DD-DA689A533AA6}
 		{5F22BFA9-D0BA-4245-A621-ECB77E8224F5} = {15A97E5F-026C-447A-97DD-DA689A533AA6}
 		{AD16DBBA-1306-4312-94A0-3F0EF322317B} = {15A97E5F-026C-447A-97DD-DA689A533AA6}
+		{4E243A4F-BB94-43E3-ACB7-3FDAE829005A} = {15A97E5F-026C-447A-97DD-DA689A533AA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F783652E-3009-49EE-869B-F7F0F1D3A113}
