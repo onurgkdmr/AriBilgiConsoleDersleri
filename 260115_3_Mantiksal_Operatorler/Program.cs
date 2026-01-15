@@ -27,16 +27,14 @@
              */
 
             bool sonuc = 10 > 5 && 20 > 15;
-
             //----------True && True 
             //----------True
-
             Console.WriteLine("10 > 5 && 20 > 15 işlem sonucu:" + sonuc);
+           
             sonuc = 10 > 5 && 0 >= 2;
-
             //----------True && False = False
-
             Console.WriteLine(" 10 > 5 && 0 >= 2 işlem sonucu:" + sonuc);
+            
             sonuc = 10 > 5 || 0 >= 2;
             Console.WriteLine("10 > 5 || 0 >=2 işlem sonucu" + sonuc);
 
