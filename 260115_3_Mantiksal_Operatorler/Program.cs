@@ -36,6 +36,7 @@
             Console.WriteLine(" 10 > 5 && 0 >= 2 işlem sonucu:" + sonuc);
             
             sonuc = 10 > 5 || 0 >= 2;
+            //--------True || False = True
             Console.WriteLine("10 > 5 || 0 >=2 işlem sonucu" + sonuc);
 
 
