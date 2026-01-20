@@ -14,6 +14,8 @@
             4) 5 sayının toplam sonucu 9,11,13 e ayrı ayrı bölündüğünü True, False şeklinde hesaplayınız.
             5) 1., 2., 3. sayıların toplamını, 4.sayıdan 5.sayı çıkartılınca kalan sonuca bölerek sonucu ekranda gösteriniz.
              */
+
+
         }
     }
 }
