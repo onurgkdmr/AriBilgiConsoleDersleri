@@ -11,6 +11,36 @@
             Eğer maaş değeri 100.000 ve üstünde ise %9 zam
             Eğer maaş değeri 150.000 ve üstünde ise %5 zam yapacak şekilde yapılan zam oranını ve yeni maaşı kullanıcıya gösteren yapıyı kodlayınız.
              */
+
+            BASLA:
+            Console.WriteLine("Maaş bilgisi giriniz:");
+            double maas=Convert.ToDouble(Console.ReadLine());
+
+            if (maas > 0 && maas <= 25000)
+            {
+                double zam = maas * 45 / 100;
+                double yenimaas = maas + zam;
+                Console.WriteLine("Zam oranı:%45 ve yeni maaşı:" + yenimaas);
+            }
+            else if (maas >= 50000 && maas < 100000)
+            {
+                double zam = maas * 17 / 100;
+                double yenimaas = maas + zam;
+                Console.WriteLine("Zam oranı:%17 ve yeni maaşı:" + yenimaas);
+            }
+            else if (maas >= 100000 && maas < 150000)
+            {
+                double zam = maas * 9 / 100;
+                double yenimaas = maas + zam;
+                Console.WriteLine("Zam oranı:%9 ve yeni maaşı:" + yenimaas);
+            }
+            else if (maas >= 150000)
+            {
+                double zam = maas * 5 / 100;
+                double yenimaas= maas + zam;
+                Console.WriteLine("Zam oranı:%5 ve yeni maaşı:" + yenimaas);
+            }
+            goto BASLA;
         }
     }
 }
