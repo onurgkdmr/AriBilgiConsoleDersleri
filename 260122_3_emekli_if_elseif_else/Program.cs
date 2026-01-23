@@ -7,10 +7,10 @@
             /*
             3-Emekli yaş hesabı sistemine göre aşağıdaki sistem ile kişi emekli edilerek ikramiye verilmektedir
             -Eğer cinsiyet kadın ise ve ve yaşı 60 ve üstü ise kişi maaşının 13 katı kadar ikramiye 
-            verilerek emekli eilecek
+            verilerek emekli edilecek.
 
             -Eğer cinsiyet erkek ise ve yaşı 65 ve üstü ise kişi maaşının 15 katı kadar ikramiye 
-            verilerek emekli eilecek
+            verilerek emekli edilecek
 
             bu 2 koşulu sağlamayan yapı varsa emekli olamıyacaktır.
             Bu sistem emekli olup olmayacağını, emekli olursa alacağı ikramiyeyi hesaplayıp gösteren 
