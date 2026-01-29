@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.2.11408.102 d18.0
+VisualStudioVersion = 18.2.11408.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu2_Tip_Donusumleri", "Konu2_Tip_Donusumleri", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -46,6 +46,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260122_4_maas_zam", "260122_4_maas_zam\260122_4_maas_zam.csproj", "{708B4F11-B79C-4334-B125-8488FAEAFCEE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu1_Veri_Tipleri", "Konu1_Veri_Tipleri", "{BBE77D34-1773-4CC2-B29C-BA2B791572BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu5_Donguler_Diziler", "Konu5_Donguler_Diziler", "{D4710204-3E59-4E97-BAC7-280134B6ADD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260129_7_ters_dik_ucgen_for", "260129_7_ters_dik_ucgen_for\260129_7_ters_dik_ucgen_for.csproj", "{A77A7688-8329-4A47-8A47-3BBF12EFF03E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +129,10 @@ Global
 		{708B4F11-B79C-4334-B125-8488FAEAFCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{708B4F11-B79C-4334-B125-8488FAEAFCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{708B4F11-B79C-4334-B125-8488FAEAFCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A77A7688-8329-4A47-8A47-3BBF12EFF03E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A77A7688-8329-4A47-8A47-3BBF12EFF03E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A77A7688-8329-4A47-8A47-3BBF12EFF03E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A77A7688-8329-4A47-8A47-3BBF12EFF03E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +156,7 @@ Global
 		{71464E9F-80CA-44A8-9BE8-92E7BB460ADD} = {EF2B90D7-4484-46FA-99EF-E106C6DFA06E}
 		{F122F69E-9D42-4293-A6BE-4E459C27AB94} = {EF2B90D7-4484-46FA-99EF-E106C6DFA06E}
 		{708B4F11-B79C-4334-B125-8488FAEAFCEE} = {EF2B90D7-4484-46FA-99EF-E106C6DFA06E}
+		{A77A7688-8329-4A47-8A47-3BBF12EFF03E} = {D4710204-3E59-4E97-BAC7-280134B6ADD3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F783652E-3009-49EE-869B-F7F0F1D3A113}
