@@ -79,6 +79,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260129_6_for_dik_ucgen_ters
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260129_7_ters_dik_ucgen_for", "260109_7_ters_dik_ucgen_for\260129_7_ters_dik_ucgen_for.csproj", "{B6FA983B-40D3-4188-96C1-F8FFF48E19A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260130_1_Diziler", "260130_1_Diziler\260130_1_Diziler.csproj", "{131490F0-CA06-43A8-ADF9-FE355EDADB44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -221,6 +223,10 @@ Global
 		{B6FA983B-40D3-4188-96C1-F8FFF48E19A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6FA983B-40D3-4188-96C1-F8FFF48E19A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6FA983B-40D3-4188-96C1-F8FFF48E19A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{131490F0-CA06-43A8-ADF9-FE355EDADB44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{131490F0-CA06-43A8-ADF9-FE355EDADB44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{131490F0-CA06-43A8-ADF9-FE355EDADB44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{131490F0-CA06-43A8-ADF9-FE355EDADB44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -260,6 +266,7 @@ Global
 		{7A3980BC-08D4-4F6A-870E-1CFAB724C04D} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
 		{CDB62965-EE75-48E1-95F4-69464F9347B8} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
 		{B6FA983B-40D3-4188-96C1-F8FFF48E19A7} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
+		{131490F0-CA06-43A8-ADF9-FE355EDADB44} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F783652E-3009-49EE-869B-F7F0F1D3A113}
