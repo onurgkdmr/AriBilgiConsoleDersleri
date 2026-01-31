@@ -16,8 +16,8 @@
                 {
                     Console.Write(k + ",");
                 }
-                Console.WriteLine();
-                yildiz = yildiz + "*";
+				Console.WriteLine("");
+				yildiz = yildiz + "*";
             }
         }
     }
