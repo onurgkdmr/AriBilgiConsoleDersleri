@@ -50,26 +50,45 @@
 
             // SORU-2:
 
-            int[] sayilar2 = new int[5];
-            int elemanSayisi = sayilar2.Length;
+            int elemanSayisi = 5;
+            int[] dizi = new int[elemanSayisi];
 
-
-            for (int i = 0; i < elemanSayisi; i++)
+            for (int i=0; i<5; i++)
             {
                 Console.WriteLine(i + 1 + ". sayıyı giriniz:");
-                sayilar2[i] = Convert.ToInt32(Console.ReadLine());
-
+                dizi[i] = Convert.ToInt32(Console.ReadLine());
             }
 
+            // Dizi => 11, 3, 9, 5, 2 (Değerleri kendimiz verdik.)
 
-            for (int i = 0; i < elemanSayisi - 1; i++)
+            for (int i=0; i<dizi.Count(); i++)
             {
-                for (int j = i + 1; j < elemanSayisi; j++)
-                {
-                    Console.WriteLine(j);
-                }
-            }
+                // dizi[i] => 11
 
+                for (int k=0; k<dizi.Count(); k++)
+                {
+                    // dizi[k] => 11, 3, 9, 5, 2
+                    // i = 0 => dizi[i] = 11
+                    // k = 0 => 0, 1, 2, 3, 4
+                    // 11>11, 11>3, 11>9, 11>5, 11>2
+                    // dizi[k] => Sıralama dizisi olacak.
+
+                    int buyukSayi;
+                    if (dizi[k] > dizi[i])
+                    {
+                        buyukSayi = dizi[k];
+
+                        // dizi[k] => 11,3,9,5,2
+                        
+                        dizi[k] = dizi[i];
+                        dizi[i] = buyukSayi;
+                    }
+
+
+
+                }
+
+            }
 
 
             // SORU-3:
@@ -88,7 +107,7 @@
 
             for (int i = 0; i < calisanSayisi; i++)
             {
-                Console.WriteLine(i + 1 + ". kişinin maaşını giriniz:");
+                Console.WriteLine(isim[i] + " kişisinin maaşını giriniz:");
                 maas[i] = Convert.ToDouble(Console.ReadLine());
             }
 
