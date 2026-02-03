@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 18
-VisualStudioVersion = 18.2.11408.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu2_Tip_Donusumleri", "Konu2_Tip_Donusumleri", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -92,6 +92,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260130_6_dizi_random", "260130_6_dizi_random\260130_6_dizi_random.csproj", "{C200627A-939D-4A62-A66C-A88F5FA392D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260130_7_Diziler_Odev", "260130_7_Diziler_Odev\260130_7_Diziler_Odev.csproj", "{43A8E041-8426-4263-BE38-6F07E2D35848}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu6_Collection_foreach", "Konu6_Collection_foreach", "{31D92B2B-AD48-42CD-ABF0-F70F5DAE565C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260203_2_collection", "260203_2_collection\260203_2_collection.csproj", "{2C00053C-0CAC-4429-AE63-13D9A3644954}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -263,6 +267,10 @@ Global
 		{43A8E041-8426-4263-BE38-6F07E2D35848}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43A8E041-8426-4263-BE38-6F07E2D35848}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43A8E041-8426-4263-BE38-6F07E2D35848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C00053C-0CAC-4429-AE63-13D9A3644954}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C00053C-0CAC-4429-AE63-13D9A3644954}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C00053C-0CAC-4429-AE63-13D9A3644954}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C00053C-0CAC-4429-AE63-13D9A3644954}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -309,6 +317,7 @@ Global
 		{57EE8EA7-5B66-4EAF-A92B-7FC71114C3EE} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
 		{C200627A-939D-4A62-A66C-A88F5FA392D9} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
 		{43A8E041-8426-4263-BE38-6F07E2D35848} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
+		{2C00053C-0CAC-4429-AE63-13D9A3644954} = {31D92B2B-AD48-42CD-ABF0-F70F5DAE565C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F783652E-3009-49EE-869B-F7F0F1D3A113}
