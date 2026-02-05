@@ -95,7 +95,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260130_7_Diziler_Odev", "26
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Konu6_Collection_foreach", "Konu6_Collection_foreach", "{31D92B2B-AD48-42CD-ABF0-F70F5DAE565C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260203_2_collection", "260203_2_collection\260203_2_collection.csproj", "{2C00053C-0CAC-4429-AE63-13D9A3644954}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260203_2_dizi_arraylist", "260203_2_collection\260203_2_dizi_arraylist.csproj", "{2C00053C-0CAC-4429-AE63-13D9A3644954}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260205_1_foreach_tanim", "260205_1_foreach_tanim\260205_1_foreach_tanim.csproj", "{4D096062-5427-4BD6-96BA-81ECEAB5E0BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -271,6 +273,10 @@ Global
 		{2C00053C-0CAC-4429-AE63-13D9A3644954}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C00053C-0CAC-4429-AE63-13D9A3644954}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C00053C-0CAC-4429-AE63-13D9A3644954}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D096062-5427-4BD6-96BA-81ECEAB5E0BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D096062-5427-4BD6-96BA-81ECEAB5E0BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D096062-5427-4BD6-96BA-81ECEAB5E0BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D096062-5427-4BD6-96BA-81ECEAB5E0BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -318,6 +324,7 @@ Global
 		{C200627A-939D-4A62-A66C-A88F5FA392D9} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
 		{43A8E041-8426-4263-BE38-6F07E2D35848} = {BAC60D0C-D76F-44BB-885A-38087F95E787}
 		{2C00053C-0CAC-4429-AE63-13D9A3644954} = {31D92B2B-AD48-42CD-ABF0-F70F5DAE565C}
+		{4D096062-5427-4BD6-96BA-81ECEAB5E0BA} = {31D92B2B-AD48-42CD-ABF0-F70F5DAE565C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F783652E-3009-49EE-869B-F7F0F1D3A113}
