@@ -3,6 +3,7 @@
 
 
 using System.Collections;
+using System.Collections.ObjectModel;
 
 namespace _260205_3_collection_ornek1
 {
@@ -17,46 +18,47 @@ namespace _260205_3_collection_ornek1
             string[] kart = { "AD", "SOYAD", "DOĞUM TARİHİ", "CİNSİYET", "MEDENİ DURUM", "AYLIK GELİR" };
             ArrayList kartItem = new ArrayList();
             
-            foreach (var item in kart)
+            for (int k=0; k<kart.Length; k++)
             {
-                if (item == "MEDENİ DURUM")
+                foreach (var item in kart)
                 {
-                    Console.WriteLine("Bekar için 1, evli için 0 yazınız");
-                }
-                else
-                {
-                    Console.WriteLine(item + "giriniz?");
-                }
-                kartItem.Add(Console.ReadLine());
-            }
-
-            for (int i = 0; i < kartItem.Count; i++)
-            {
-                if (kart[i] == "MEDENİ DURUM")
-                {
-                    if (kartItem[i] =="1")
+                    if (item == "MEDENİ DURUM")
                     {
-                        Console.WriteLine(kart[i] + "Bekar");
+                        Console.WriteLine("Bekar için 1, evli için 0 yazınız");
                     }
                     else
                     {
-                        Console.WriteLine(kart[i] + "Evli");
+                        Console.WriteLine(item + "giriniz?");
+                    }
+                    kartItem.Add(Console.ReadLine());
+                }
+
+                for (int i = 0; i < kartItem.Count; i++)
+                {
+                    if (kart[i] == "MEDENİ DURUM")
+                    {
+                        if (kartItem[i] == "1")
+                        {
+                            Console.WriteLine(kart[i] + "Bekar");
+                        }
+                        else
+                        {
+                            Console.WriteLine(kart[i] + "Evli");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine(kart[i] + ":" + kartItem[i]);
                     }
                 }
-                else
-                {
-                    Console.WriteLine(kart[i] + ":" + kartItem[i]);
-                }
+                Console.WriteLine(kart[k]);
             }
+            
 
             // Bu soru eğer 5'den fazla kişi kartı istenseydi nasıl bir yol izlenirdi, çözünüz.
             
 
-           
-
-
-
-
+            
         }
     }
 }
