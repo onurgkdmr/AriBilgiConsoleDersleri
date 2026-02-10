@@ -113,6 +113,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260206_3_deger_donduren_ret
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260206_4_method_ornekler", "260206_4_method_ornekler\260206_4_method_ornekler.csproj", "{19A78DB3-C151-4384-8689-539A03A1ED12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "260210_1_Collection_Odev_Cozumu", "260210_1_Collection_Odev_Cozumu\260210_1_Collection_Odev_Cozumu.csproj", "{6B0A7D09-B70A-4445-B49F-C44D9C40D9C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -315,6 +317,10 @@ Global
 		{19A78DB3-C151-4384-8689-539A03A1ED12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A78DB3-C151-4384-8689-539A03A1ED12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A78DB3-C151-4384-8689-539A03A1ED12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0A7D09-B70A-4445-B49F-C44D9C40D9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0A7D09-B70A-4445-B49F-C44D9C40D9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0A7D09-B70A-4445-B49F-C44D9C40D9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0A7D09-B70A-4445-B49F-C44D9C40D9C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -369,6 +375,7 @@ Global
 		{2BFB9F46-DCBC-4486-89B2-3464EC169E65} = {5EB35663-3962-4CCF-900C-9A5D34096208}
 		{4C43913B-94B9-4F89-82B9-3314F6D0384B} = {5EB35663-3962-4CCF-900C-9A5D34096208}
 		{19A78DB3-C151-4384-8689-539A03A1ED12} = {5EB35663-3962-4CCF-900C-9A5D34096208}
+		{6B0A7D09-B70A-4445-B49F-C44D9C40D9C6} = {5EB35663-3962-4CCF-900C-9A5D34096208}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F783652E-3009-49EE-869B-F7F0F1D3A113}
