@@ -13,7 +13,7 @@
             Eğer Cinsiyet erkek ise
             yaş 65 ve üstü ise, prim 8500 ise kişi maaşının 17.5 katı kadar ikramiye alarak emekli ediliyor 
 
-            bu şartlara kişi emekli ise alacağı ikramiye, emekli değilse emekli olmama nedenini veren yapıyı kodlayınız
+            bu şartlara kişi emekli ise alacağı ikramiye, emekli değilse emekli olmama nedenini veren yapıyı kodlayınız.
             
             NOT:Cinsiyet seçimi switch case ile yapılacaktır
             NOT:Eğer prim, yaş ve cinsiyet hatalı girilirse kullanıcıdan tekrar girilmesi istenecektir. Tekrar giriş yapmayacaksa bu koşul kullanıcıya bırakılır ve    kullanıcı klavyeden belirlenen bir harf,yazı,karakter ile çıkış sağlamalıdır.
