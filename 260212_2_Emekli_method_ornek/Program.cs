@@ -37,73 +37,7 @@
             }
             */
 
-            EkranaYaz("Cinsiyetinizi giriniz:");
-            Cinsiyet();
-
-            EkranaYaz("Yaşınızı giriniz:");
-            Yas();
-
-            EkranaYaz("Prim gün sayısını giriniz:");
-            PrimGunSayisi();
-
-            EkranaYaz("Maaşınızı giriniz:");
-            Maas();
-
-
-            EmekliHesapla();
-
-
-
-            /*switch (cinsiyet)
-            {
-                case "kadın":
-                case "bayan":
-
-                    if (yas >= 60)
-                    {
-                        if (primGunSayisi >= 7300)
-                        {
-                            ikramiye = maas * 15;
-                            Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Emekli olamazsınız.");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, maas);
-                    }
-                    break;
-
-                case "erkek":
-                case "bay":
-
-                    if (yas >= 65)
-                    {
-                        if (primGunSayisi >= 8500)
-                        {
-                            ikramiye = maas * 17.5;
-                            Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
-                        }
-                        else
-                        {
-                            Console.WriteLine("Emekli olamazsınız.");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, maas);
-                    }
-                    break;
-
-                default:
-                    Console.WriteLine("Hatalı cinsiyet girişi");
-                    break;
-            }*/
-
-
+            EmekliHesapla(Cinsiyet());
 
         }
 
@@ -116,58 +50,68 @@
 
         static byte Yas()
         {
-            byte yas = Convert.ToByte(Console.ReadLine());
+            EkranaYaz("Yaşınızı giriniz:");
+            byte yas = Convert.ToByte(Oku());
             return yas;
         }
 
         static int PrimGunSayisi()
         {
-            int primGünSayisi = Convert.ToInt32(Console.ReadLine());
+            EkranaYaz("Prim gün sayısını giriniz:");
+            int primGünSayisi = Convert.ToInt32(Oku());
             return primGünSayisi;
         }
 
         static double Maas()
         {
-            double maas = Convert.ToDouble(Console.ReadLine());
+            EkranaYaz("Maaşınızı giriniz:");
+            double maas = Convert.ToDouble(Oku());
             return maas;
         }
 
-        static double EmekliHesapla(string cinsiyet, byte yas, int primGunSayisi, double maas)
+        static void EmekliHesapla(string cinsiyet)
         {
-            double ikramiye = 0;
             switch (cinsiyet)
             {
                 case "kadın":
                 case "bayan":
-                    byte girilenYas = Yas();
-                    if (girilenYas >= 60)
+                    byte girilenYasKadin = Yas();
+
+                    if (girilenYasKadin >= 60)
                     {
                         int girilenPrim = PrimGunSayisi();
+
                         if (girilenPrim >= 7300)
                         {
-                            ikramiye = Maas() * 15;
-                            Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
+                            // Emekli olabilir ve ikramiye hesabı için maaşı gereklidir. Maaşı kullanıcıdan isteyelim:
+                            double girilenMaas = Maas();
+                            double ikramiye = girilenMaas * 15;
+                            Cizgi();
+                            EkranaYaz("Emekli olabilirsiniz TEBRİKLER!");
+                            Cizgi();
+                            EkranaYaz("Alacağınız ikramiye:" + ikramiye);
                         }
                         else
                         {
-                            Console.WriteLine("Emekli olamazsınız.");
+                            EkranaYaz("Girilen prim yetersiz olduğundan emekli olamazsınız. Gerekli gün sayısı:"+(7300-girilenPrim));
                         }
                     }
                     else
                     {
-                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, girilenYas);
+                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, girilenYasKadin);
                     }
                     break;
 
                 case "erkek":
                 case "bay":
-                    girilenYas = Yas();
-                    if (girilenYas >= 65)
+                    byte girilenYasErkek = Yas();
+                    if (girilenYasErkek >= 65)
                     {
                         int girilenPrim = PrimGunSayisi();
                         if (girilenPrim >= 8500)
                         {
-                            ikramiye = Maas() * 17.5;
+                            double girilenMaas=Maas();
+                            double ikramiye = Maas() * 17.5;
                             Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
                         }
                         else
@@ -177,14 +121,12 @@
                     }
                     else
                     {
-                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, girilenYas);
+                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, girilenYasErkek);
                     }
                     break;
                 default:
                     Console.WriteLine("Hatalı cinsiyet girişi");
                     break;
-
-                    return ikramiye;
             }
         }
         static void EkranaYaz(string metin)
@@ -192,5 +134,14 @@
             Console.WriteLine(metin);
         }
 
+        static string Oku()
+        {
+            return Console.ReadLine();
+        }
+
+        static void Cizgi()
+        {
+            EkranaYaz("-------------------------");
+        }
     }
 }
