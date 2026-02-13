@@ -21,6 +21,87 @@
             */
 
 
+            /*
+                while (true)
+            {
+                Console.WriteLine("Cinsiyetinizi giriniz (kadın/bayan veya erkek/bay):");
+                cinsiyet = Console.ReadLine().ToLower();
+                if (cinsiyet == "kadın" || cinsiyet == "bayan" || cinsiyet == "erkek" || cinsiyet == "bay")
+                {
+                    Console.WriteLine("Çıkmak için herhangi bir tuşa basınız.");
+                    string cikis = Console.ReadLine();
+                    Console.WriteLine("Çıkış yaptınız.");
+                    break;
+                }
+                Console.WriteLine("Cinsiyet girişi yanlış, tekrar deneyiniz.");
+            }
+            */
+
+            EkranaYaz("Cinsiyetinizi giriniz:");
+            Cinsiyet();
+
+            EkranaYaz("Yaşınızı giriniz:");
+            Yas();
+
+            EkranaYaz("Prim gün sayısını giriniz:");
+            PrimGunSayisi();
+
+            EkranaYaz("Maaşınızı giriniz:");
+            Maas();
+
+
+            EmekliHesapla();
+
+
+
+            /*switch (cinsiyet)
+            {
+                case "kadın":
+                case "bayan":
+
+                    if (yas >= 60)
+                    {
+                        if (primGunSayisi >= 7300)
+                        {
+                            ikramiye = maas * 15;
+                            Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Emekli olamazsınız.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, maas);
+                    }
+                    break;
+
+                case "erkek":
+                case "bay":
+
+                    if (yas >= 65)
+                    {
+                        if (primGunSayisi >= 8500)
+                        {
+                            ikramiye = maas * 17.5;
+                            Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Emekli olamazsınız.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, maas);
+                    }
+                    break;
+
+                default:
+                    Console.WriteLine("Hatalı cinsiyet girişi");
+                    break;
+            }*/
 
 
 
@@ -29,28 +110,24 @@
 
         static string Cinsiyet()
         {
-            Console.WriteLine("Cinsiyetinizi giriniz (Kadın/Erkek):");
             string cinsiyet = Console.ReadLine();
             return cinsiyet;
         }
 
         static byte Yas()
         {
-            Console.WriteLine("Yaşınızı giriniz:");
             byte yas = Convert.ToByte(Console.ReadLine());
             return yas;
         }
 
         static int PrimGunSayisi()
         {
-            Console.WriteLine("Prim gün sayısını giriniz:");
             int primGünSayisi = Convert.ToInt32(Console.ReadLine());
             return primGünSayisi;
         }
 
         static double Maas()
         {
-            Console.WriteLine("Maaş bilgisini giriniz:");
             double maas = Convert.ToDouble(Console.ReadLine());
             return maas;
         }
@@ -58,46 +135,61 @@
         static double EmekliHesapla(string cinsiyet, byte yas, int primGunSayisi, double maas)
         {
             double ikramiye = 0;
-
             switch (cinsiyet)
             {
-                case "Kadın":
-
-                    yas = Yas();
-
-                    if (yas >= 60)
+                case "kadın":
+                case "bayan":
+                    byte girilenYas = Yas();
+                    if (girilenYas >= 60)
                     {
-
-                        primGunSayisi = PrimGunSayisi();
-
-                        if (primGunSayisi >= 7300)
+                        int girilenPrim = PrimGunSayisi();
+                        if (girilenPrim >= 7300)
                         {
-                            Console.WriteLine("Maaş bilgisini giriniz:");
-                            maas = Convert.ToDouble(Console.ReadLine());
-                            ikramiye = maas * 15;
+                            ikramiye = Maas() * 15;
+                            Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
                         }
-                        else 
-                            return ikramiye;
+                        else
+                        {
+                            Console.WriteLine("Emekli olamazsınız.");
+                        }
                     }
                     else
                     {
-                        Console.WriteLine("");
-                        return 0;
+                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, girilenYas);
                     }
-
                     break;
 
-                case "Erkek":
-                    if (cinsiyet == "Erkek")
+                case "erkek":
+                case "bay":
+                    girilenYas = Yas();
+                    if (girilenYas >= 65)
                     {
-                        Console.WriteLine("Yaşınızı giriniz:");
-                        yas = Convert.ToByte(Console.ReadLine());
+                        int girilenPrim = PrimGunSayisi();
+                        if (girilenPrim >= 8500)
+                        {
+                            ikramiye = Maas() * 17.5;
+                            Console.WriteLine("Emekli olabilirsiniz ve ikramiyeniz:" + ikramiye);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Emekli olamazsınız.");
+                        }
                     }
-                    return ikramiye;
+                    else
+                    {
+                        Console.WriteLine("{0} için yaş:{1} emeklilik için yeterli değildir", cinsiyet, girilenYas);
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Hatalı cinsiyet girişi");
                     break;
 
+                    return ikramiye;
             }
-            return ikramiye;
+        }
+        static void EkranaYaz(string metin)
+        {
+            Console.WriteLine(metin);
         }
 
     }
