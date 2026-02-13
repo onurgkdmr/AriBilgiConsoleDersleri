@@ -20,23 +20,6 @@
 
             */
 
-
-            /*
-                while (true)
-            {
-                Console.WriteLine("Cinsiyetinizi giriniz (kadın/bayan veya erkek/bay):");
-                cinsiyet = Console.ReadLine().ToLower();
-                if (cinsiyet == "kadın" || cinsiyet == "bayan" || cinsiyet == "erkek" || cinsiyet == "bay")
-                {
-                    Console.WriteLine("Çıkmak için herhangi bir tuşa basınız.");
-                    string cikis = Console.ReadLine();
-                    Console.WriteLine("Çıkış yaptınız.");
-                    break;
-                }
-                Console.WriteLine("Cinsiyet girişi yanlış, tekrar deneyiniz.");
-            }
-            */
-
             EmekliHesapla(Cinsiyet());
 
         }
